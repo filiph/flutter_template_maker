@@ -1,4 +1,5 @@
-A tool for automatic creation of Flutter templates from Flutter projects. 
+A tool for automatically creating Flutter templates 
+from existing Flutter projects.
 
 First, create a copy of the `example/game_template.yaml` configuration file
 and change values as appropriate. Then run:

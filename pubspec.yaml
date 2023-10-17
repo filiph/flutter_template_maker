@@ -1,9 +1,9 @@
 name: flutter_template_maker
 description: >
-  A tool for automatic creation of Flutter templates
-  from Flutter projects.
+  A tool for automatically creating Flutter templates 
+  from existing Flutter projects.
 version: 0.1.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/filiph/flutter_template_maker
 
 environment:
   sdk: ^3.1.3
