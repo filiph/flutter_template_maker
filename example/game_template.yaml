@@ -1,0 +1,40 @@
+# The exact project name, as specified in pubspec.yaml.
+project_name: game_template
+
+# Path to the project.
+input_directory: ../flutter-game-template-v2/
+
+# Files to copy as is, adding '.copy.tmpl' as extension.
+copy_globs:
+- assets/**/README.md
+- assets/fonts/**
+- assets/icons/**
+- README.md
+
+# Files that are big, so they should be copied to pkg:flutter_template_images,
+# and placeholders should be added with '.img.tmpl' extensions.
+image_globs:
+- assets/images/**
+- assets/music/**.mp3
+- assets/sfx/**
+
+# Files to copy, substituting project_name with '{{projectName}}',
+# and adding the '.tmpl' extension.
+mustache_globs:
+- lib/**
+- test/**
+- pubspec.yaml
+
+# Files to ignore.
+ignore_globs:
+- '**/.DS_Store'
+
+# This is the directory where the template files (except the big ones) live.
+# It should correspond to the local checkout of a subdirectory within
+# https://github.com/flutter/flutter/tree/master/packages/flutter_tools/templates
+output_directory: /Users/filiph/dev/flutter/packages/flutter_tools/templates/game
+
+# This is the directory where pkg:flutter_template_images live.
+# It should correspond to the local checkout of a subdirectory within
+# https://github.com/flutter/packages/tree/main/packages/flutter_template_images/templates.
+output_images_directory: /Users/filiph/dev/flutter_packages/packages/flutter_template_images/templates/game
